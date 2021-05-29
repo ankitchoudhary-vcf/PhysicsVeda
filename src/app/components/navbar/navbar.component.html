@@ -1,0 +1,47 @@
+<nav class="navbar notifications is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" [routerLink]="['']">
+            <img src="./assets/PhysicsVeda.ico">
+            <p class="title is-3 mx-2">PhysicsVeda</p>
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" [class.is-active]="isActive" (click)="isActive = !isActive"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu" [class.is-active]="isActive">
+        <div class="navbar-start has-text-weight-bold">
+            <a class="navbar-item" [routerLink]="['']">
+                Home
+            </a>
+
+            <a class="navbar-item" [routerLink]="['videos']">
+                Videos
+            </a>
+
+            <a class="navbar-item" [routerLink]="['']">
+                Blogs
+            </a>
+
+            <a class="navbar-item" [routerLink]="['contact']">
+                Contact Me
+            </a>
+        </div>
+
+        <div class="navbar-end" *ngIf="!isLogin">
+            <div class="buttons has-addons mx-2">
+                <a [routerLink]="['login']" class="button is-rounded ">Login</a>
+                <a [routerLink]="['join']" class="button is-danger is-rounded">Join Now</a>
+            </div>
+        </div>
+        <div class="navbar-end" *ngIf="isLogin">
+          <div class="buttons has-addons mx-2">
+              <a [routerLink]="['profile']" class="button is-rounded ">Profile</a>
+          </div>
+        </div>
+    </div>
+</nav>

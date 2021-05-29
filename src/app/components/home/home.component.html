@@ -1,0 +1,86 @@
+<section style="background-color: rgb(243, 243, 243);">
+  <section class="hero">
+    <div class="hero-body" style="padding-top: 3rem;">
+      <div class="container">
+        <div class="columns box is-vcentered is-centered has-text-weight-bold">
+          <div class="column is-half">
+            <div class="media">
+              <div class="columns">
+                <div class="column">
+                  <figure class="image is-64x64 center">
+                    <img src="assets/PhysicsVeda.ico" alt="">
+                  </figure>
+                </div>
+                <div class="column is-11">
+                  <p class="title py-3 has-text-centered" id="heading">PhysicsVeda</p>
+                </div>
+              </div>
+            </div>
+            <p class="subtitle py-5" id="typedtext">{{typewriter_display }}</p>
+            <div class="column">
+              <button class="button is-primary m-2">Browse Blog</button>
+              <button class="button is-danger m-2" [routerLink]="['videos']">Browse Video Tutorial</button>
+              <button class="button is-success m-2" [routerLink]="['contact']">Contact Me</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns notification is-centered is-multipleline">
+          <div class="column is-one-quarter-desktop is-one-third-tablet">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="./assets/Videos.jpg" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content has-text-centered">
+                <div class="content">
+                  <p class="title has-text-centered is-4 py-5">Free Video Courses</p>
+                  Get your career started with these free video courses. Notes are available with all
+                  the videos for amazing learning experience.
+                </div>
+                <button class="button is-primary m-2 has-text-centered" [routerLink]="['videos']">Browse Video Courses</button>
+              </div>
+            </div>
+          </div>
+          <div class="column is-one-quarter-desktop is-one-third-tablet">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="./assets/Articles.jpg" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content has-text-centered">
+                <div class="content">
+                  <p class="title has-text-centered is-4 py-5">Physics Articles</p>
+                  Some of the latest Physics information and innovations compiled in the form of Physics articles. Keep
+                  your knowledge up to date with these articles.
+                </div>
+                <button class="button is-primary m-2 has-text-centered">Go to Blog</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-one-quarter-desktop is-one-third-tablet">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-480x480">
+                  <img src="./assets/Contact_me.jpg" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content has-text-centered">
+                <div class="content">
+                  <p class="title has-text-centered is-4 py-5">Contact Me</p>
+                  Learn physics free courses. Examples are available with these tutorials. You can
+                  contact me for any doubt and I will get back to you!
+                </div>
+                <button class="button is-primary m-2 has-text-centered" [routerLink]="['contact']">Contact Me</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</section>

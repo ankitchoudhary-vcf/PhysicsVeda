@@ -6,7 +6,6 @@ import { VideosComponent } from './components/videos/videos.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
-  {path:'', component: HomeComponent},
   {path:'videos', component: VideosComponent},
   {path:'contact', component: ContactComponent}
 ];

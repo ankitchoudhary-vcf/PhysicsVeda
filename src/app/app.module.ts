@@ -10,6 +10,7 @@ import { VideosComponent } from './components/videos/videos.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { YoutubeService } from './services/youtube.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { VideoComponent } from './components/video/video.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     FooterComponent,
     HomeComponent,
     VideosComponent,
-    ContactComponent
+    ContactComponent,
+    VideoComponent
   ],
   imports: [
     BrowserModule,

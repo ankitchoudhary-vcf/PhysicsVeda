@@ -14,9 +14,7 @@ export class VideosComponent implements OnInit {
 
   ngOnInit(): void {
     this.API.getData('/playlists?part=snippet&channelId=UCvFUbROutPnoIgfZrpJ6gNw&key=AIzaSyDdUAIMenXoNLQRA3QWbxxg_DQh2rzMwLo').then((value) => {
-      console.log(value);
       this.data = value;
-      console.log(this.data.items.length, this.data.items[0].id, this.data.items[0].snippet.title, this.data.items[0].snippet.thumbnails.default.url);
     })
   }
 

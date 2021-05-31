@@ -1,0 +1,43 @@
+<section style="background-color: rgb(243, 243, 243);">
+    <section class="hero">
+        <div class="hero-body" style="padding-top: 3rem;">
+            <div class="container">
+                <div class="columns notification is-centered is-multipleline">
+
+                    <div class="column is-8">
+                        <div class="media">
+                            <iframe width="100%" height="350" src="https://www.youtube.com/embed/JFKRBmQhALM"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="column is-5 has-text-centered">
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Playlist
+                                </p>
+                            </header>
+
+                            <div class="card-content">
+                                <a class="media" routerLink="/videos" *ngFor = 'let data of data.items;'>
+                                    <div class="media-left">
+                                        <figure class="image is-64x64">
+                                            <img src="{{data.snippet.thumbnails.medium.url}}"
+                                                alt="Placeholder image">
+                                        </figure>
+                                    </div>
+                                    <div class="media-contant">
+                                        <p class="title is-6">{{data.snippet.title}}</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

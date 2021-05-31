@@ -13,9 +13,11 @@ export class VideoComponent implements OnInit {
   video : any;
   APIRoute: any;
   data : any;
+  iframe : any;
 
   constructor(private route: ActivatedRoute, private API: YoutubeService) { }
 
+  
   ngOnInit(): void {
     this.route.paramMap.subscribe((params)=>{
       this.playlist = params.get('id');
@@ -36,6 +38,7 @@ export class VideoComponent implements OnInit {
       }
       // console.log(this.data.items[0].snippet.resourceId.videoId, this.data.items[6].snippet.thumbnails.default.url);
     })
+    
   }
 
 }

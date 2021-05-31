@@ -2,3 +2,7 @@
     max-height: 550px;
     overflow-y: scroll;
 }
+iframe{
+    width:100%;
+    height:360px
+}

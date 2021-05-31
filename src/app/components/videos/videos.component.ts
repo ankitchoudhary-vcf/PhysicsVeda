@@ -13,7 +13,7 @@ export class VideosComponent implements OnInit {
   constructor(private API: YoutubeService) { }
 
   ngOnInit(): void {
-    this.API.getData('/playlists?part=snippet&channelId=UCvFUbROutPnoIgfZrpJ6gNw&key=AIzaSyDdUAIMenXoNLQRA3QWbxxg_DQh2rzMwLo').then((value) => {
+    this.API.getData('/playlists?part=snippet&channelId=UCvFUbROutPnoIgfZrpJ6gNw&key=AIzaSyBlKSy2HuQVA5RsjHFxJ3hXSnLTSsGlRPA').then((value) => {
       this.data = value;
     })
   }

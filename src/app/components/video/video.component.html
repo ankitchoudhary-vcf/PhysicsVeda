@@ -6,7 +6,7 @@
 
                     <div class="column is-8">
                         <div class="media">
-                            <iframe src="http://www.youtube.com/embed/videoseries?list=PLirvGqVPjmPDlgH-ByRhNiHZLxzmhwWJU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe [src]="url" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="column is-5 has-text-centered">
@@ -18,7 +18,7 @@
                             </header>
 
                             <div class="card-content">
-                                <a class="media" routerLink="/videos" *ngFor = 'let data of data.items;'>
+                                <a class="media" *ngFor = 'let data of data.items;' (click)="SetURL(data.snippet.resourceId.videoId)">
                                     <div class="media-left">
                                         <figure class="image is-64x64">
                                             <img src="{{data.snippet.thumbnails.medium.url}}"
